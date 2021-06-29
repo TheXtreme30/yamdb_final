@@ -1,6 +1,7 @@
 # YaMDb
 
 Проект YaMDb собирает отзывы пользователей на произведения.
+https://github.com/github/docs/actions/workflows/main.yml/badge.svg
 
 ### Технологии
 - python 3.8.5
