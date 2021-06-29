@@ -1,6 +1,5 @@
-from rest_framework import permissions
-
 from api.models import Roles
+from rest_framework import permissions
 
 
 class IsAdminPermission(permissions.BasePermission):

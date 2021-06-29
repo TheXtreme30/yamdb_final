@@ -1,14 +1,6 @@
 from django.contrib.auth.hashers import check_password, make_password
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
-from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import filters, mixins, status, viewsets
-from rest_framework.decorators import action, api_view, permission_classes
-from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import (AllowAny, IsAuthenticated,
-                                        IsAuthenticatedOrReadOnly)
-from rest_framework.response import Response
-from rest_framework_simplejwt.tokens import AccessToken
 
 from api.filters import TitleFilter
 from api.mail import generate_confirm_code, send_mail_func
@@ -21,6 +13,14 @@ from api.serializers import (CategorySerializer,
                              GenreSerializer, ReviewSerializer,
                              TitleSerializer, TitleSerializerWithRating,
                              UserSerializer)
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters, mixins, status, viewsets
+from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.permissions import (AllowAny, IsAuthenticated,
+                                        IsAuthenticatedOrReadOnly)
+from rest_framework.response import Response
+from rest_framework_simplejwt.tokens import AccessToken
 
 BASE_USERNAME = 'User'
 
