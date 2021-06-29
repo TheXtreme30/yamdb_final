@@ -1,5 +1,5 @@
 # YaMDb
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/TheXtreme30/yamdb_final/actions/workflows/main.yml/badge.svg)
 
 Проект YaMDb собирает отзывы пользователей на произведения.
 
