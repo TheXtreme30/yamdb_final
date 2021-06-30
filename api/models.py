@@ -52,9 +52,6 @@ class Title(models.Model):
     )
     description = models.TextField(verbose_name='Описание')
 
-    def get_genre(self):
-        return "\n".join([p.genre for p in self.genre.all()])
-
     class Meta:
         ordering = ['id']
         verbose_name = 'Title'

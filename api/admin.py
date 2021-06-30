@@ -18,7 +18,7 @@ class GenreAdmin(admin.ModelAdmin):
 
 
 class TitleAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'get_genre', 'year', 'description',)
+    list_display = ('name', 'category', 'genre', 'year', 'description',)
     search_fields = ('name',)
     list_filter = ('name',)
     empty_value_display = '-пусто-'
