@@ -42,7 +42,7 @@ class Title(models.Model):
     )
     genre = models.ManyToManyField(
         Genre,
-        null=True, blank=True,
+        blank=True,
         related_name='titles',
     )
     name = models.CharField(verbose_name='Название', max_length=50)
@@ -51,6 +51,9 @@ class Title(models.Model):
         validators=[MaxValueValidator(datetime.now().year)]
     )
     description = models.TextField(verbose_name='Описание')
+
+    def get_genre(self):
+        return "\n".join([p.genre for p in self.genre.all()])
 
     class Meta:
         ordering = ['id']
