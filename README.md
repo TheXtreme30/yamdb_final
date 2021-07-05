@@ -1,8 +1,6 @@
 # YaMDb
 ![example workflow](https://github.com/TheXtreme30/yamdb_final/actions/workflows/main.yml/badge.svg)
 
-адресс сервера 84.201.152.142
-
 Проект YaMDb собирает отзывы пользователей на произведения.
 
 ### Технологии
