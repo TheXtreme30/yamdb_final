@@ -10,10 +10,7 @@ SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    os.environ.get('DOMAIN_NAME'),
-    os.environ.get('HOST'),
-]
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
